@@ -1,30 +1,49 @@
-<%- include("partials/header") %>
-
-<div class="ui main text container">
-    <div class="display-3" style="font-family: 'David Libre', serif;margin-bottom: 50px;"><center><U>THE ENTRE CHAINS</U></center></div>
-            <% blogs.forEach(function(blog){ %>
-            <a href="/blogs/<%=blog._id%>" style="text-decoration: none;margin-top: 30px;" id="hoverAbleIndex"><div class="container h-80">
-    <div class="row align-items-center h-80" style=" background-image: linear-gradient(to bottom, 
-     rgba(201, 201, 201,0.3), rgba(122, 122, 122,0.5),rgba(94, 94, 94,0.7)), url(<%= blog.image %>);height: 400px; width: auto;background-size:cover;background-repeat: no-repeat;background-position:center;margin-top: 30px;margin-bottom: 30px;">
-        <div class="col-12 mx-auto">
-            <div class="jumbotron" style="background: transparent">
-            <span class="text-light display-2"><%= blog.title %></span>
-            <div class="d-flex justify-content-end text-light">
+<%- include("partials/header3") %>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">SHAURYA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link " href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/blogs">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/media">MEDIA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blogs/new">WRITE</a>
+        </li>
+        
+      </ul>
       
-         <%= blog.created.toDateString() %>
- </div>
-            </div>
-            
-        </div>
     </div>
-</div></a>
+  </nav>
+<div class="text container mt-5 pt-5">
+    
+            <% blogs.forEach(function(blog){ %>
+            <a class="animate__animated animate__pulse nav-link" href="/blogs/<%=blog._id%>">
+                <span class=""><%= blog.title %></span>
+                <p class="text-light"><%= blog.body.substring(0,300) %>  <span class="text-primary">READ MORE</span></p>
+            </a>
                
-                            
-                       
+                            <br>
+                            <div id="line"><hr /></div>  
             <% }) %>
         </div>
- 
-<div class="text-center">
-<center><a href="/blogs/new"><button class="btn-lg btn-dark mt-5 mr-2 lead" style="margin-top: 12px;">Create a new post</button></a></center>
-</div>
+
+
+    
 <%- include("partials/footer") %>

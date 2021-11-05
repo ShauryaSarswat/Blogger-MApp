@@ -1,0 +1,79 @@
+
+.jumbotron{
+    padding-top: 0;
+    background-image: linear-gradient(to right,rgba(250,190,0,1),rgba(250,190,0,1),rgba(250,190,0,0.8),rgba(250,190,0,0.2)), url(https://images.unsplash.com/photo-1507099985932-87a4520ed1d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    padding: 0.5% 8%;
+    position: absolute !important;
+    z-index: 1;
+    width: 100%;
+    margin-top: 0%;
+
+}
+.active
+{
+    text-decoration: underline;
+    transition-duration: 0ms;
+}
+.navbar
+{
+    padding: 0%;
+    margin: 0%;
+}
+.navbar-brand
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: black;
+}
+.navbar-brand:hover
+{
+    color: rgb(24, 22, 22);
+}
+.nav-link
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+.nav-link:hover
+{
+    color: wheat;
+    text-decoration: underline;
+    transition-duration:1s;
+}
+.text
+{
+    color: white;
+    font-size: 40px;
+}
+.navbar-toggler
+{
+    background-color: wheat;
+    border-radius: 100vh;
+    height: 2rem;
+    width: 2rem;
+    color: black;
+}
+.header
+{
+    font-size: 6rem;
+    font-family: ;
+    font-weight: 700;
+    color: white;
+}
+.header-lead
+{
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+}

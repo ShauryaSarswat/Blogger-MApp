@@ -1,0 +1,107 @@
+<%- include("partials/header2") %>
+<section>
+  <div class="jumbotron jumbotron-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">SHAURYA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blogs">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/media">MEDIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact">CONTACT</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    <div class="container-top">
+      <h1 class="header">Celebrating the online culture of posting</h1>
+      <p class="header-lead">Bringing in the digital impact...</p>
+    </div>
+    <div class="mt-5 text-center pt-5">
+        <h1 class="display-header">
+            Lets Talk in More Detail
+        </h1>
+    </div>
+    <div class="row pt-5 mt-5 pb-5 mb-5">
+        <div class="col-4">
+        <img src="images/contact.png" class="animate__animated animate__pulse" alt="">
+        </div>
+        <div class="col-8">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip01">First name</label>
+                      <input type="text" class="form-control" id="validationTooltip01" value="Shaurya" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip02">Last name</label>
+                      <input type="text" class="form-control" id="validationTooltip02" value="Sarswat" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip03">City</label>
+                      <input type="text" class="form-control" id="validationTooltip03" required>
+                      <div class="invalid-tooltip">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="validationTooltip04">State</label>
+                      <select class="custom-select" id="validationTooltip04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-tooltip">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="validationTooltip05">Zip</label>
+                      <input type="text" class="form-control" id="validationTooltip05" required>
+                      <div class="invalid-tooltip">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ShauryasarswatpersonalAC@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button class="btn btn-outline-dark rounded-pill" type="submit">Submit form</button>
+                </form>
+                
+        </div>
+    </div>
+</div>
+
+</section>
+
+  <%- include("partials/footer") %>

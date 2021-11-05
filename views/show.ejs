@@ -1,18 +1,27 @@
-<%- include ("partials/header") %>
-<div class="ui main text container segment pb-0 text-light pl-3 pr-3" style="background-color: black">
-    <div class="ui huge header mb-0" style="color: white;font-weight: 300"><center><h1 class="display-4"><%=blog.title%></h1></center></div>
+<%- include ("partials/header4") %>
+
+    <div class="navbar-nav fixed-top m-5">
+      <a href="/blogs" class="text-light nav-link"> <- Go Back </a>
+    </div>
+
+<div class="pb-0 text-light pl-3 pr-3" style="background-color: rgb(250,190,0);">
+  <div class="container"><div class="mb-0" style="color: black;font-weight: 500;"><center><h1 class="display-header animate__animated animate__rotateInDownLeft" style="font-size: 4rem;"><%=blog.title%></h1></center></div>
     <div class="content mb-2">
-               <center><span style="color: #cccaca ;margin-top: 0px;" > <%=blog.created.toDateString()%></span></center> 
-             </div> 
+               <center><span style="color: white;margin-top: 0px;" > Published On : <%=blog.created.toDateString()%></span></center> 
+             </div> </div>
     <div class="ui top attached">
         <div class="item">
-             <img class="ui centered rounded image" src="<%=blog.image%>">
-        
-        <div class="description text-center rounded-lg" style="color: white;margin-top: 8px;margin-bottom: 8px; padding: 8px;">
+          <center>
+            <img src="<%=blog.image%>" width="800" class="animate__animated animate__fadeInDown">
+          </center> 
+        <div class="container">
+          
+        <div class="description animate__animated animate__fadeIn animate__delay-1s" style="color: black;margin-top: 20px;margin-bottom: 8px;font-size: 1.5rem;font-family: 'Bebas Neue', cursive;">
                 <p><%-blog.body%></p>
         </div>
+      </div>
         <form id="delete" action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
-            <button class="ui basic pink button" >Delete</button>
+            <button class="btn btn-outline-danger m-5">Delete</button>
         </form>
       </div>
   </div>

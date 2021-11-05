@@ -26,6 +26,18 @@ var Blog = mongoose.model("Blog", blogSchema);
 app.get("/",function(req, res){
 	res.render("landing");
 });
+app.get("/contact",function(req, res){
+	res.render("contact");
+});
+app.get("/about",function(req, res){
+	res.render("about");
+});
+app.get("/resume",function(req, res){
+    res.render("resume");
+});
+app.get("/media",function(req, res){
+	res.render("media");
+});
 app.get("/blogs", function (req, res){
     Blog.find({}, function (err, blogs){ // adding index functionality to retrieve all blogs from database
         if (err) {
@@ -54,6 +66,7 @@ app.post("/blogs/new", function(req, res){
 app.get("/blogs/new", function(req, res){
     res.render("new");// all we have to do is render b/c its new
 });
+
 app.get("/blogs/:id", function(req, res){
    Blog.findById(req.params.id, function(err, foundBlog){
        if (err) {

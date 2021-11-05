@@ -1,0 +1,58 @@
+body
+{
+    background-color: rgb(250,190,0);
+}
+.navbar-brand
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: black;
+}
+.active
+{
+    text-decoration: underline;
+    transition-duration: 0ms;
+}
+.navbar-brand:hover
+{
+    color: rgb(24, 22, 22);
+}
+.nav-link
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+.nav-link:hover
+{
+    color: wheat;
+    text-decoration: underline;
+    transition-duration:1s;
+}
+.text
+{
+    color: white;
+    font-size: 40px;
+}
+.navbar-toggler
+{
+    background-color: wheat;
+    border-radius: 100vh;
+    height: 2rem;
+    width: 2rem;
+    color: black;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:black;
+    height: 1px;
+  }

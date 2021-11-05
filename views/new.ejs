@@ -1,11 +1,24 @@
-<%- include("partials/header2") %>
-<div class="ui main text container segment " style="background-color: black;color: white;border: 1px solid white;">
-<div class="ui huge light header" style="color: white;"> Create New Posts </div>
-<form class="ui form" action"/blogs" method="POST">
- <div class="field"><label>Title</label><input type="text" name="blog[title]" placeholder="title" required>
- <label>image URL:</label><input type="text" name="blog[image]" placeholder="image" required>
- <label>Blog Content</label><textarea name="blog[body]" required></textarea></div>
- <input type="submit" class="ui violet basic button"></div>
+<%- include("partials/header5") %>
+<div class="navbar-nav fixed-top m-5">
+    <a href="/blogs" class="text-light nav-link"> <- Go Back </a>
+  </div>
+
+<div class="text-center p-5">
+    <div class="display-header2 animate__animated animate__jackInTheBox" style="font-size: 4rem;font-weight: bold;">
+        Enter the blog Contents <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
+          </svg>
+    </div>
+    <form action"/blogs" method="POST" class="animate__animated animate__slideInLeft">
+        <input type="text" class="text-center mt-5 mb-5" name="blog[title]" placeholder="TITLE" require style="width: 50%; border: 0; border-bottom: 1px solid black; background-color: inherit;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <br>
+        <input class="text-center mt-5 mb-5" type="text" name="blog[image]" placeholder="IMAGE URL" required style="width: 50%; border: 0; border-bottom: 1px solid black; background-color: inherit;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <br>
+        <textarea class="text-center mt-5 mb-5" name="blog[body]" placeholder="CONTENT" required style="height: 400px;width: 50%; border: 0;border:1px solid black;margin: 5px;background-color: inherit;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></textarea>
+        <br>
+        <input type="submit" class="btn btn-outline-dark"></div>
+        </form>
 </div>
-</div>
+
+
 <%- include("partials/footer") %>
