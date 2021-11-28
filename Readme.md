@@ -21,9 +21,9 @@ Addition of a server script-based back-end to a website ensures the consistency 
 
 ## Project Screenshots :
 
-![This is an image](\public\images\1.png)
+![This is an image](\images\1.png)
 
-![This is an image](public\images\2.png)
+![This is an image](images\2.png)
 
 ![This is an image](public\images\3.png)
 
