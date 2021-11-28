@@ -19,21 +19,6 @@ managing the front-end by keeping the end transitions and schema the same for di
 ### Solution Statement :
 Addition of a server script-based back-end to a website ensures the consistency of the blogs, also it gives us rather easy options for changing the animations and managing the website front-end centrally without affecting the blogs schema patterns.
 
-## Project Screenshots :
-
-![This is an image](\images\1.png)
-
-![This is an image](images\2.png)
-
-![This is an image](public\images\3.png)
-
-![This is an image](public\images\4.png)
-
-![This is an image](public\images\5.png)
-
-![This is an image](public\images\6.png)
-
-![This is an image](public\images\7.png)
 
 ## Project Tech. Analysis :
 
@@ -48,13 +33,6 @@ Addition of a server script-based back-end to a website ensures the consistency 
  - > npm install express-sanitizer
  - > **In app.js** require("express-sanitizer")
  
-
-## Undersigned Introduction ( Author CV ) :
-
-
-![This is an image](public\Resume\ShauryaSarswat.png)
-
-
 ## Similar Projects
 
 - The Entrepreneurship Blogs : [https://github.com/ShauryaSarswat/WebsiteTemplate](https://github.com/ShauryaSarswat/WebsiteTemplate)
