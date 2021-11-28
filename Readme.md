@@ -10,10 +10,6 @@ Creating a dedicated website for blogging is complex, and if the website is dedi
 
 managing the front-end by keeping the end transitions and schema the same for different types of blogs is also a hectic task.
 
-- Link to the Project Abstract : [Statements.pdf]()
-
-- Link to the Project Presentation : [Project-Shaurya.ppt]()
-
 - Link to the Project Demonstration : []()
 
 ### Solution Statement :
